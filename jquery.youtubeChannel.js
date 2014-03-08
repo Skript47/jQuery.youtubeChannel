@@ -147,7 +147,6 @@
             },
             // parse the list of videos sent from the API
             parseList = function(data) {
-                console.log(data);
                 var e, i, feedlen;
                 // do we have videos to add?
                 if (data.feed.entry) {
