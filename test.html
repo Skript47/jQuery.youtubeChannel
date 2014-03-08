@@ -15,16 +15,17 @@
     var ytc;
     $(function() {
         var count = 2;
-        ytc = $('#youtube-channel').youtubeChannel({
-            username: 'nettutsplus',
+        ytc = $("#youtube-channel").youtubeChannel({
+            username: "UC9-y-6csu5WGm29I7JiwpnA",
+            channel: "Computerphile",
             startIndex: 1,
             maxResults: 10,
-            orderBy: 'published',
+            orderBy: "published",
             callback: function(api) {
                 // check if plugin failed to load any videos
                 if (!api.failed) {
                     // log the number of videos loaded so far
-                    console.log('loaded ' + api.videoCount + ' videos');
+                    // console.log("loaded " + api.videoCount + " videos");
                     // execute two more loads asynchronously
                     if (count--) {
                         // add some delay, just because :)
@@ -35,7 +36,7 @@
                 }
             }
         });
-        console.log(ytc.api);
+        // console.log(ytc.api);
     });
     </script>
 </body>
