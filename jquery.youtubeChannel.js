@@ -68,7 +68,7 @@
             getTitle = function() {
                 var isChannel = (options.channel !== "");
                 if (options.username !== "") {
-                    return "<a href=\"http://www.youtube.com/" + (isChannel ? "channel/" : "user/") +
+                    return "<a href=\"http://www.youtube.com/" + (isChannel ? "user/" : "/") +
                         options.username + "\" target=\"_blank\">" +
                         (isChannel ? options.channel : options.username) + "</a>";
                 } else if (options.query !== '') {
